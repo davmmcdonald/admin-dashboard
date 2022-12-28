@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #FF4500;
+    --alt-color: #FF8C00;
+    --secondary-color: #666;
+    --background-color: #eee;
+    --text-color: #000;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    padding: 12px 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0,0,0,0.25);
+}
+
+footer {
+    flex: 0;
+    padding: 12px;
+    background-color: var(--text-color);
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.logo {
+    font-family: 'Righteous', cursive;
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 16px;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+.avatar {
+    margin-right: 8px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url("assets/avatar.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sidebar {
+    min-width: 240px;
+    padding: 16px;
+    background-image: linear-gradient(var(--alt-color), var(--primary-color));
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.category {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.category i {
+    font-size: 20px;
+}
+
+.collapsible {
+    float: right;
+}
+
+.group {
+    margin: 8px 0 0 8px;
+    border-left: solid 1px #fff;
+}
+
+.item {
+    display: block;
+    margin-left: 4px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.item:hover {
+    background-color: rgb(255,255,255,0.1);
+}
+
+.selected {
+    background-color: rgb(255,255,255,0.2);
+}
