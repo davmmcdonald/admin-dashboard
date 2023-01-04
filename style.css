@@ -24,7 +24,7 @@ header {
 
 .logo {
     font-family: 'Righteous', cursive;
-    font-size: 32px;
+    font-size: 40px;
     color: var(--primary-color);
 }
 
@@ -52,6 +52,11 @@ nav i:hover {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 footer {
